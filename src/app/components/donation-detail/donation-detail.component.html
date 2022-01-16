@@ -1,0 +1,70 @@
+<div class="row p-3 my-3">
+
+    <div class="col-sm-8">
+
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <td><label><b>Donation date:</b></label></td>
+                    <td>
+                        {{ donation.donationDate | date:'medium' }}
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label><b>Donor name:</b></label></td>
+                    <td>
+                        {{ donation.donorName }}
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label><b>Donation item:</b></label></td>
+                    <td>
+                        {{ donation.donationItem }}
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><b>Description:</b></label></td>
+                    <td>
+                        {{ donation.description }}
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><b>Unit:</b></label></td>
+                    <td>
+                        {{ donation.unit }}
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><b>Quantity:</b></label></td>
+                    <td>
+                        {{ donation.quantity }}
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><b>Unit value:</b></label></td>
+                    <td>
+                        {{ donation.unitValue }}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label><b>Total value:</b></label></td>
+                    <td>
+                        {{ donation.totalValue }}
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <!-- <div class="col-sm-4">
+        <img src="{{ donation.file }}" height="400" width="400">
+    </div> -->
+</div>
+
+<button class="btn btn-dark my-2 my-sm-0" (click)="goBack()">Return to the list</button>
